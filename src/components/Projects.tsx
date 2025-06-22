@@ -23,47 +23,117 @@ const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
-      name: 'E-Commerce Platform',
-      description: 'Full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboard.',
-      techStack: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
-      githubLink: 'https://github.com/msaad/ecommerce',
-      demoLink: 'https://demo.example.com',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop',
-      year: '2024',
-      type: 'Web Application'
+      name: 'Portfolio Website',
+      description: 'Modern portfolio website with glassmorphic design and smooth animations.',
+      techStack: ['React', 'TypeScript', 'Tailwind CSS'],
+      githubLink: 'https://github.com/M-Saad-Mushtaq/portfolio',
+      image: 'https://images.unsplash.com/photo-1527689368864-3a821dbccc34?w=800&h=600&fit=crop',
+      year: '2025',
+      type: 'Website'
     },
+  
     {
       id: 2,
-      name: 'Task Management App',
-      description: 'Collaborative task management tool with real-time updates and team collaboration features.',
-      techStack: ['React', 'Firebase', 'Material-UI'],
-      githubLink: 'https://github.com/msaad/taskmanager',
-      image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop',
+      name: 'AI Image Generator',
+      description: 'AI image generator built with the MERN stack.',
+      techStack: ['MongoDB', 'Express', 'React', 'Node.js'],
+      githubLink: 'https://github.com/M-Saad-Mushtaq/AI-Image-Generator',
+      image: 'https://images.unsplash.com/photo-1502759683240-e98db45b829a?w=800&h=600&fit=crop',
       year: '2024',
       type: 'Web Application'
     },
     {
       id: 3,
-      name: 'Weather Dashboard',
-      description: 'Beautiful weather dashboard with location-based forecasts and interactive charts.',
-      techStack: ['JavaScript', 'API Integration', 'Chart.js'],
-      githubLink: 'https://github.com/msaad/weather',
-      demoLink: 'https://weather.example.com',
-      image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop',
-      year: '2023',
-      type: 'Web Application'
+      name: 'Tenzies',
+      description: 'Dice game “Tenzies” implemented in React.',
+      techStack: ['React'],
+      githubLink: 'https://github.com/M-Saad-Mushtaq/Tenzies-Game-Using-REACT',
+      image: 'https://images.unsplash.com/photo-1562826277-5d32259f9487?w=800&h=600&fit=crop',
+      year: '2024',
+      type: 'Web Game'
     },
     {
       id: 4,
-      name: 'Portfolio Website',
-      description: 'Modern portfolio website with glassmorphic design and smooth animations.',
-      techStack: ['React', 'TypeScript', 'Tailwind CSS'],
-      githubLink: 'https://github.com/msaad/portfolio',
-      image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&h=600&fit=crop',
+      name: 'PulsePlay',
+      description: 'AI-based song streaming and recommendation mobile app.',
+      techStack: ['Kotlin','XML','Firebase'],
+      githubLink: 'https://github.com/M-Saad-Mushtaq/Pulseplay',
+      image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=800&h=600&fit=crop',
+      year: '2025',
+      type: 'Mobile Application'
+    },
+    {
+      id: 5,
+      name: 'Chat App',
+      description: 'Real-time chat application using MERN stack and Socket.io.',
+      techStack: ['MongoDB', 'Express', 'React', 'Node.js', 'Socket.io'],
+      githubLink: 'https://github.com/M-Saad-Mushtaq/Chat-App',
+      image: 'https://images.unsplash.com/photo-1551033139-3db6e2e40416?w=800&h=600&fit=crop',
       year: '2024',
-      type: 'Website'
+      type: 'Web Application'
+    },
+    {
+      id: 6,
+      name: 'Movie Review Website',
+      description: 'Movie review platform built on the MERN stack.',
+      techStack: ['MongoDB', 'Express', 'React', 'Node.js'],
+      githubLink: 'https://github.com/M-Saad-Mushtaq/Movie-Review-Website-NodeJS-MongoDB-',
+      image: 'https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=800&h=600&fit=crop',
+      year: '2024',
+      type: 'Web Application'
+    },
+    {
+      id: 7,
+      name: 'NGO Blood Donation System (.NET)',
+      description: 'Blood donation management web app using SQL and .NET Core.',
+      techStack: ['.NET Core', 'SQL'],
+      githubLink: 'https://github.com/M-Saad-Mushtaq/Blood-Donation-Site-ASP.NET-SQL-SERVER',
+      image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&h=600&fit=crop',
+      year: '2024',
+      type: 'Web Application'
+    },
+    {
+      id: 8,
+      name: 'NGO Blood Donation System (MERN)',
+      description: 'Blood donation management web app built with the MERN stack.',
+      techStack: ['MongoDB', 'Express', 'React', 'Node.js'],
+      githubLink: 'https://github.com/M-Saad-Mushtaq/NGO-Blood-Donation-Fullstack-WebApp',
+      image: 'https://images.unsplash.com/photo-1516455207990-6a4e8e0dbd07?w=800&h=600&fit=crop',
+      year: '2024',
+      type: 'Web Application'
+    },
+    {
+      id: 9,
+      name: 'Solitaire',
+      description: 'Classic solitaire card game implemented with C++ libraries.',
+      techStack: ['C++'],
+      githubLink: 'http://github.com/M-Saad-Mushtaq/Solitaire-Using-OOP',
+      image: 'https://images.unsplash.com/photo-1565299564271-93a8d6c411c9?w=800&h=600&fit=crop',
+      year: '2023',
+      type: 'Game'
+    },
+    {
+      id: 10,
+      name: 'Alphabet Catcher',
+      description: 'Assembly-language game where players catch falling alphabets.',
+      techStack: ['Assembly'],
+      githubLink: 'https://github.com/M-Saad-Mushtaq/Alphabet-Catcher-in-Assembly',
+      image: 'https://images.unsplash.com/photo-1591797419764-18b7b145ffa5?w=800&h=600&fit=crop',
+      year: '2023',
+      type: 'Game'
+    },
+    {
+      id: 11,
+      name: 'Teleword',
+      description: 'C++ console-based word-finding program for a 15×15 grid.',
+      techStack: ['C++'],
+      githubLink: 'https://github.com/M-Saad-Mushtaq/Teleword-Project',
+      image: 'https://images.unsplash.com/photo-1605540542504-9500f82f835a?w=800&h=600&fit=crop',
+      year: '2022',
+      type: 'Console Application'
     }
   ];
+  
 
   const allTechs = ['All', ...Array.from(new Set(projects.flatMap(p => p.techStack)))];
 

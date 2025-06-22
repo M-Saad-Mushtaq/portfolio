@@ -10,18 +10,23 @@ interface Skill {
 
 const Skills: React.FC = () => {
   const skills: Skill[] = [
-    { name: 'JavaScript', level: 95, category: 'Programming', icon: '🟨' },
-    { name: 'TypeScript', level: 90, category: 'Programming', icon: '🔷' },
-    { name: 'React', level: 95, category: 'Frontend', icon: '⚛️' },
+    { name: 'JavaScript', level: 85, category: 'Programming', icon: '🟨' },
+    { name: 'TypeScript', level: 70, category: 'Programming', icon: '🔷' },
+    { name: 'XML', level: 95, category: 'Frontend', icon: '📄' },        
+    { name: 'Kotlin', level: 90, category: 'Backend', icon: '🧬' },      
+    { name: 'Java', level: 75, category: 'Backend', icon: '☕' },      
+    { name: 'C', level: 95, category: 'Programming', icon: '💻' },       
+    { name: 'C++', level: 95, category: 'Programming', icon: '➕' },     
+    { name: 'Assembly', level: 90, category: 'Programming', icon: '🧠' }, 
     { name: 'Node.js', level: 85, category: 'Backend', icon: '🟢' },
     { name: 'Python', level: 80, category: 'Programming', icon: '🐍' },
-    { name: 'PostgreSQL', level: 85, category: 'Database', icon: '🐘' },
-    { name: 'MongoDB', level: 80, category: 'Database', icon: '🍃' },
-    { name: 'AWS', level: 75, category: 'Cloud', icon: '☁️' },
-    { name: 'Docker', level: 70, category: 'DevOps', icon: '🐳' },
+    { name: 'MongoDB', level: 90, category: 'Database', icon: '🍃' },
+    { name: 'Firebase', level: 90, category: 'Database', icon: '🔥' },  
     { name: 'Git', level: 90, category: 'Tools', icon: '📋' },
+    { name: 'Github', level: 90, category: 'Tools', icon: '🐙' },
     { name: 'Tailwind CSS', level: 90, category: 'Frontend', icon: '🎨' },
-    { name: 'Express.js', level: 85, category: 'Backend', icon: '🚀' }
+    { name: 'React', level: 90, category: 'Frontend', icon: '⚛️' },
+    { name: 'Express.js', level: 90, category: 'Backend', icon: '🚀' }
   ];
 
   const categories = ['All', ...Array.from(new Set(skills.map(skill => skill.category)))];
@@ -95,25 +100,6 @@ const Skills: React.FC = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Certifications */}
-        <div className="mt-16">
-          <h3 className="text-2xl font-bold text-center mb-8">Certifications & Achievements</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { name: 'AWS Certified Solutions Architect', issuer: 'Amazon Web Services', year: '2024' },
-              { name: 'React Developer Certification', issuer: 'Meta', year: '2023' },
-              { name: 'Full Stack Web Development', issuer: 'freeCodeCamp', year: '2023' }
-            ].map((cert, index) => (
-              <div key={cert.name} className="glass-card text-center">
-                <div className="text-4xl mb-4">🏆</div>
-                <h4 className="font-semibold mb-2">{cert.name}</h4>
-                <p className="text-sm text-muted-foreground">{cert.issuer}</p>
-                <p className="text-xs text-muted-foreground mt-1">{cert.year}</p>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>

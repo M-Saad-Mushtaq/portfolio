@@ -7,74 +7,44 @@ const Resume: React.FC = () => {
 
   const experience = [
     {
-      title: 'Senior Software Engineer',
-      company: 'TechCorp Solutions',
+      title: 'Software Engineer Intern',
+      company: 'InvenXen',
       location: 'Remote',
-      period: '2022 - Present',
+      period: '2025 - Present',
       description: [
-        'Led development of React-based applications serving 100K+ users',
-        'Architected scalable microservices using Node.js and PostgreSQL',
-        'Mentored junior developers and conducted code reviews',
-        'Improved application performance by 40% through optimization'
-      ]
-    },
-    {
-      title: 'Full Stack Developer',
-      company: 'Digital Innovations',
-      location: 'New York, NY',
-      period: '2020 - 2022',
-      description: [
-        'Built and maintained 15+ client projects using React and Node.js',
-        'Implemented CI/CD pipelines reducing deployment time by 60%',
-        'Collaborated with UX/UI teams to create responsive designs',
-        'Integrated third-party APIs and payment gateways'
-      ]
-    },
-    {
-      title: 'Frontend Developer',
-      company: 'StartupHub',
-      location: 'San Francisco, CA',
-      period: '2019 - 2020',
-      description: [
-        'Developed responsive web applications using React and TypeScript',
-        'Optimized website performance achieving 95+ Lighthouse scores',
-        'Worked closely with product managers to deliver user-centered solutions',
-        'Contributed to open-source projects and documentation'
+        'Working primarily as an Android app developer using Kotlin and Firebase',
+        'Also contributed to web development tasks using the MERN stack',
+        'Built and maintained scalable mobile app features for real-world use cases',
+        'Collaborated with cross-functional teams to integrate APIs and optimize UX',
+        'Assisted in deploying and debugging mobile and web applications'
       ]
     }
+    
   ];
 
   const education = [
     {
       degree: 'Bachelor of Science in Computer Science',
-      institution: 'Stanford University',
-      location: 'Stanford, CA',
-      period: '2015 - 2019',
-      gpa: '3.8/4.0',
-      honors: 'Magna Cum Laude'
-    },
-    {
-      degree: 'Full Stack Web Development Bootcamp',
-      institution: 'General Assembly',
-      location: 'San Francisco, CA',
-      period: '2019',
+      institution: 'Fast-NUCES, Lahore',
+      location: 'Lahore, Pakistan',
+      period: '2022 - 2026',
       gpa: '',
-      honors: 'Top 10% of Class'
+      honors: ''
     }
   ];
 
   const handleDownload = () => {
     // Create a link element and trigger download
     const link = document.createElement('a');
-    link.href = '/resume.pdf';
-    link.download = 'MSaad_Resume.pdf';
+    link.href = '/M Saad - Software Engineer.pdf';
+    link.download = 'M Saad - Software Engineer.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
 
   const handleView = () => {
-    window.open('/resume.pdf', '_blank');
+    window.open('/M Saad - Software Engineer.pdf', '_blank');
   };
 
   return (
@@ -155,11 +125,11 @@ const Resume: React.FC = () => {
                     </div>
                   </div>
                 </div>
-                <ul className="space-y-2">
+                <ul className="space-y-2 pl-6">
                   {job.description.map((item, idx) => (
-                    <li key={idx} className="flex items-start gap-2 text-muted-foreground">
-                      <span className="text-blue-600 mt-2">•</span>
-                      <span>{item}</span>
+                    <li key={idx} className="text-muted-foreground">
+                      <span className="text-blue-600">•</span>
+                      <span className="ml-2">{item}</span>
                     </li>
                   ))}
                 </ul>

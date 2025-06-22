@@ -1,8 +1,16 @@
 
-import React from 'react';
+import React, { useRef } from 'react';
 import { Linkedin, Mail } from 'lucide-react';
 
 const About: React.FC = () => {
+  const mailRef = useRef<HTMLButtonElement>(null);
+
+  const handleMailClick = () => {
+    if (mailRef.current) {
+      const emailLink = 'mailto:chsaad973@gmail.com?subject=Portfolio%20Contact';
+      window.location.href = emailLink;
+    }
+  };
   return (
     <section id="about" className="py-20 bg-gradient-to-br from-background to-accent/20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -36,7 +44,7 @@ const About: React.FC = () => {
 
               <div className="flex gap-4 mt-8">
                 <a
-                  href="https://linkedin.com/in/msaad"
+                  href="https://linkedin.com/in/m-saad-mushtaq"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="glass-card p-3 hover:scale-105 transition-all duration-300 hover:bg-blue-50 dark:hover:bg-blue-900/30"
@@ -45,7 +53,9 @@ const About: React.FC = () => {
                   <Linkedin className="w-6 h-6 text-blue-600" />
                 </a>
                 <a
-                  href="mailto:hello@msaad.dev"
+                  href="mailto:chsaad973@gmail.com?subject=Portfolio%20Contact"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="glass-card p-3 hover:scale-105 transition-all duration-300 hover:bg-green-50 dark:hover:bg-green-900/30"
                   aria-label="Email Contact"
                 >
@@ -68,11 +78,11 @@ const About: React.FC = () => {
               <p className="text-muted-foreground mb-4">Software Engineer</p>
               <div className="flex justify-center gap-6 text-sm">
                 <div className="text-center">
-                  <div className="font-semibold text-2xl gradient-text">3+</div>
+                  <div className="font-semibold text-2xl gradient-text">1+</div>
                   <div className="text-muted-foreground">Years Experience</div>
                 </div>
                 <div className="text-center">
-                  <div className="font-semibold text-2xl gradient-text">50+</div>
+                  <div className="font-semibold text-2xl gradient-text">10+</div>
                   <div className="text-muted-foreground">Projects</div>
                 </div>
                 <div className="text-center">

@@ -1,8 +1,10 @@
 
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { ArrowDown, Download } from 'lucide-react';
 
 const Hero: React.FC = () => {
+  const nameRef = useRef<HTMLSpanElement>(null);
+
   const scrollToAbout = () => {
     document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -10,6 +12,16 @@ const Hero: React.FC = () => {
   const scrollToContact = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
+
+  useEffect(() => {
+    if (nameRef.current) {
+      // Remove the typing animation class after it completes
+      setTimeout(() => {
+        nameRef.current.classList.remove('animate-typing');
+        nameRef.current.classList.add('animate-pulse');
+      }, 2000); // Match this with the typing animation duration
+    }
+  }, []);
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
@@ -24,7 +36,7 @@ const Hero: React.FC = () => {
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Hi, I'm{' '}
-            <span className="gradient-text">M Saad</span>
+            <span className="gradient-text animate-pulse">M Saad</span>
           </h1>
           
           <div className="text-xl md:text-2xl text-muted-foreground mb-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
@@ -32,7 +44,7 @@ const Hero: React.FC = () => {
             <p className="text-lg">Building digital experiences that matter</p>
           </div>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-slide-up" style={{ animationDelay: '0.4s' }}>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-24 animate-slide-up" style={{ animationDelay: '0.4s' }}>
             <button
               onClick={scrollToContact}
               className="glass-card px-8 py-4 bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300 hover:scale-105 font-medium"
@@ -51,7 +63,7 @@ const Hero: React.FC = () => {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-22 left-1/2 transform -translate-x-1/2 animate-bounce">
           <button
             onClick={scrollToAbout}
             className="p-2 rounded-full glass hover:scale-110 transition-all duration-300"

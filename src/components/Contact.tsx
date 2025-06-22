@@ -62,8 +62,8 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <p className="font-medium">Email</p>
-                    <a href="mailto:hello@msaad.dev" className="text-muted-foreground hover:text-blue-600 transition-colors">
-                      hello@msaad.dev
+                    <a href="mailto:chsaad973@gmail.com" className="text-muted-foreground hover:text-blue-600 transition-colors">
+                      chsaad973@gmail.com
                     </a>
                   </div>
                 </div>
@@ -74,8 +74,8 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <p className="font-medium">Phone</p>
-                    <a href="tel:+1234567890" className="text-muted-foreground hover:text-green-600 transition-colors">
-                      +1 (234) 567-8900
+                    <a href="tel:+923421184350" className="text-muted-foreground hover:text-green-600 transition-colors">
+                      +92 3421184350
                     </a>
                   </div>
                 </div>
@@ -86,7 +86,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <p className="font-medium">Location</p>
-                    <p className="text-muted-foreground">San Francisco, CA</p>
+                    <p className="text-muted-foreground">Lahore, Pakistan</p>
                   </div>
                 </div>
                 
@@ -97,12 +97,12 @@ const Contact: React.FC = () => {
                   <div>
                     <p className="font-medium">LinkedIn</p>
                     <a 
-                      href="https://linkedin.com/in/msaad" 
+                      href="https://linkedin.com/in/m-saad-mushtaq" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="text-muted-foreground hover:text-blue-600 transition-colors"
                     >
-                      linkedin.com/in/msaad
+                      linkedin.com/in/m-saad-mushtaq
                     </a>
                   </div>
                 </div>

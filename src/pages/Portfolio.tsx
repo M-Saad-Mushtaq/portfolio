@@ -50,12 +50,12 @@ const Portfolio: React.FC = () => {
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="text-center md:text-left mb-4 md:mb-0">
               <p className="text-muted-foreground">
-                © 2024 M Saad. Built with React, TypeScript & Tailwind CSS.
+                © 2025 M Saad. Built with React, TypeScript & Tailwind CSS.
               </p>
             </div>
             <div className="flex items-center space-x-4">
               <a
-                href="https://linkedin.com/in/msaad"
+                href="https://linkedin.com/in/m-saad-mushtaq"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-blue-600 transition-colors"
@@ -64,7 +64,7 @@ const Portfolio: React.FC = () => {
                 LinkedIn
               </a>
               <a
-                href="mailto:hello@msaad.dev"
+                href="mailto:chsaad973@gmail.com"
                 className="text-muted-foreground hover:text-green-600 transition-colors"
                 aria-label="Email"
               >
