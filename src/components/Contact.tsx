@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import { Mail, MapPin, Phone, Send, Linkedin } from 'lucide-react';
+import emailjs from 'emailjs-com';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -20,19 +21,22 @@ const Contact: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+  
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      console.log('Form submitted:', formData);
+      await emailjs.send(
+        'service_c9xkhjg',
+        'template_gcaxwhd',
+        formData,
+        'a4v0byk6Hf56onK3I'
+      );
+  
+      console.log('Email sent successfully!');
       setSubmitStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
-      
-      // Reset status after 3 seconds
+  
       setTimeout(() => setSubmitStatus('idle'), 3000);
     } catch (error) {
-      console.error('Error submitting form:', error);
+      console.error('Error sending email:', error);
       setSubmitStatus('error');
       setTimeout(() => setSubmitStatus('idle'), 3000);
     } finally {
