@@ -10,7 +10,7 @@ const Resume: React.FC = () => {
       title: 'Software Engineer Intern',
       company: 'InvenXen',
       location: 'Remote',
-      period: '2025 - Present',
+      period: 'June 2025 - Aug 2025',
       description: [
         'Working primarily as an Android app developer using Kotlin and Firebase',
         'Also contributed to web development tasks using the MERN stack',

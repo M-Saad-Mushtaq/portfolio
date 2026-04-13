@@ -1,65 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-
 @layer base {
   :root {
-    --background: 240 10% 98%;
-    --foreground: 240 10% 3%;
+    --background: 36 50% 98%;
+    --foreground: 218 38% 14%;
     --card: 0 0% 100%;
-    --card-foreground: 240 10% 3%;
+    --card-foreground: 218 38% 14%;
     --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3%;
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 240 4.8% 96%;
-    --secondary-foreground: 240 5.9% 10%;
-    --muted: 240 4.8% 96%;
-    --muted-foreground: 240 3.8% 45%;
-    --accent: 240 4.8% 96%;
-    --accent-foreground: 240 5.9% 10%;
-    --destructive: 0 84.2% 60.2%;
+    --popover-foreground: 218 38% 14%;
+    --primary: 14 90% 57%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 44 95% 92%;
+    --secondary-foreground: 218 38% 14%;
+    --muted: 35 35% 94%;
+    --muted-foreground: 220 15% 40%;
+    --accent: 174 70% 92%;
+    --accent-foreground: 205 60% 18%;
+    --destructive: 0 80% 57%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 5.9% 88%;
-    --input: 240 5.9% 88%;
-    --ring: 240 10% 3%;
-    --radius: 0.75rem;
-    
-    /* Glass morphism variables */
-    --glass-bg: rgba(255, 255, 255, 0.15);
-    --glass-border: rgba(255, 255, 255, 0.3);
-    --glass-shadow: rgba(0, 0, 0, 0.15);
-    --blur: blur(20px);
+    --border: 28 40% 85%;
+    --input: 28 40% 85%;
+    --ring: 14 90% 57%;
+    --radius: 0.85rem;
+
+    --glass-bg: rgba(255, 255, 255, 0.5);
+    --glass-border: rgba(255, 255, 255, 0.8);
+    --glass-shadow: rgba(217, 90, 40, 0.15);
+    --blur: blur(16px);
   }
 
   .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
+    --background: 222 37% 9%;
+    --foreground: 38 45% 96%;
+    --card: 223 35% 12%;
+    --card-foreground: 38 45% 96%;
+    --popover: 223 35% 12%;
+    --popover-foreground: 38 45% 96%;
+    --primary: 23 96% 62%;
+    --primary-foreground: 223 35% 12%;
+    --secondary: 218 30% 18%;
+    --secondary-foreground: 38 45% 96%;
+    --muted: 218 24% 18%;
+    --muted-foreground: 220 14% 74%;
+    --accent: 173 30% 22%;
+    --accent-foreground: 174 72% 88%;
+    --destructive: 0 65% 42%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 240 4.9% 83.9%;
-    
-    /* Dark mode glass morphism */
-    --glass-bg: rgba(0, 0, 0, 0.2);
+    --border: 217 24% 24%;
+    --input: 217 24% 24%;
+    --ring: 23 96% 62%;
+
+    --glass-bg: rgba(9, 16, 28, 0.45);
     --glass-border: rgba(255, 255, 255, 0.1);
-    --glass-shadow: rgba(0, 0, 0, 0.3);
+    --glass-shadow: rgba(0, 0, 0, 0.35);
   }
 }
 
@@ -67,11 +64,26 @@
   * {
     @apply border-border;
   }
-  
+
   body {
     @apply bg-background text-foreground font-medium;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-family: 'Sora', 'Space Grotesk', sans-serif;
     line-height: 1.6;
+    background-image:
+      radial-gradient(circle at 20% 15%, rgba(255, 181, 71, 0.12), transparent 35%),
+      radial-gradient(circle at 80% 25%, rgba(32, 201, 151, 0.12), transparent 40%),
+      radial-gradient(circle at 50% 85%, rgba(255, 107, 107, 0.1), transparent 35%);
+    background-attachment: fixed;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Space Grotesk', 'Sora', sans-serif;
+    letter-spacing: -0.01em;
   }
 }
 
@@ -81,119 +93,109 @@
     border: 1px solid var(--glass-border);
     backdrop-filter: var(--blur);
     -webkit-backdrop-filter: var(--blur);
-    box-shadow: 0 12px 40px var(--glass-shadow);
+    box-shadow: 0 12px 32px var(--glass-shadow);
+  }
+
+  .glass-card {
+    @apply glass rounded-2xl p-6 transition-all duration-300;
+  }
+
+  .glass-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 18px 34px var(--glass-shadow);
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-orange-500 via-rose-500 to-teal-500 bg-clip-text text-transparent;
   }
 
   .animate-typing {
     animation: typing 2s ease-in-out infinite;
   }
-  
-  /* Enhanced animations */
-  @keyframes float {
-    0% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-20px);
-    }
-    100% {
-      transform: translateY(0px);
-    }
-  }
-  
+
   .animate-float {
-    animation: float 10s ease-in-out infinite;
-  }
-  
-  @keyframes slide-up {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .animate-slide-up {
-    animation: slide-up 0.8s ease-out forwards;
-  }
-  
-  @keyframes typing {
-    0% { opacity: 0; }
-    5% { opacity: 1; }
-    95% { opacity: 1; }
-    100% { opacity: 0; }
+    animation: float 8s ease-in-out infinite;
   }
 
-  @keyframes pulse {
-    0% { opacity: 1; }
-    50% { opacity: 0.8; }
-    100% { opacity: 1; }
-  }
-  
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
   .animate-fade-in {
-    animation: fade-in 0.5s ease-out forwards;
+    animation: fade-in 0.55s ease-out forwards;
   }
-  
-  .gradient-text {
-    @apply bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent;
-  }
-  
-  .glass-card {
-    @apply glass rounded-2xl p-6 transition-all duration-300;
-  }
-  
-  .glass-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 40px var(--glass-shadow);
-  }
-  
-  .gradient-text {
-    @apply bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent;
-  }
-  
-  .animate-float {
-    animation: float 6s ease-in-out infinite;
-  }
-  
-  .animate-fade-in {
-    animation: fadeIn 0.6s ease-out forwards;
-  }
-  
+
   .animate-slide-up {
-    animation: slideUp 0.8s ease-out forwards;
+    animation: slide-up 0.7s ease-out forwards;
+  }
+}
+
+@layer utilities {
+  .border-glass-border {
+    border-color: var(--glass-border);
   }
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-@keyframes slideUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-/* Scrollbar styling */
+@keyframes typing {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .animate-float {
+    animation-duration: 12s;
+  }
+}
+
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 7px;
 }
 
 ::-webkit-scrollbar-track {
@@ -201,10 +203,10 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--glass-border);
-  border-radius: 3px;
+  background: hsl(var(--primary) / 0.35);
+  border-radius: 999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--muted-foreground);
+  background: hsl(var(--primary) / 0.5);
 }

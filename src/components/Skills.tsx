@@ -10,21 +10,20 @@ interface Skill {
 
 const Skills: React.FC = () => {
   const skills: Skill[] = [
-    { name: 'JavaScript', level: 85, category: 'Programming', icon: '🟨' },
+    { name: 'JavaScript', level: 70, category: 'Programming', icon: '🟨' },
     { name: 'TypeScript', level: 70, category: 'Programming', icon: '🔷' },
-    { name: 'XML', level: 95, category: 'Frontend', icon: '📄' },        
-    { name: 'Kotlin', level: 90, category: 'Backend', icon: '🧬' },      
-    { name: 'Java', level: 75, category: 'Backend', icon: '☕' },      
+    { name: 'XML', level: 85, category: 'Frontend', icon: '📄' },        
+    { name: 'Kotlin', level: 80, category: 'Backend', icon: '🧬' },    
     { name: 'C', level: 95, category: 'Programming', icon: '💻' },       
     { name: 'C++', level: 95, category: 'Programming', icon: '➕' },     
     { name: 'Assembly', level: 90, category: 'Programming', icon: '🧠' }, 
-    { name: 'Node.js', level: 85, category: 'Backend', icon: '🟢' },
+    { name: 'Node.js', level: 80, category: 'Backend', icon: '🟢' },
     { name: 'Python', level: 80, category: 'Programming', icon: '🐍' },
-    { name: 'MongoDB', level: 90, category: 'Database', icon: '🍃' },
+    { name: 'MongoDB', level: 80, category: 'Database', icon: '🍃' },
     { name: 'Firebase', level: 90, category: 'Database', icon: '🔥' },  
     { name: 'Git', level: 90, category: 'Tools', icon: '📋' },
     { name: 'Github', level: 90, category: 'Tools', icon: '🐙' },
-    { name: 'Tailwind CSS', level: 90, category: 'Frontend', icon: '🎨' },
+    { name: 'Tailwind CSS', level: 80, category: 'Frontend', icon: '🎨' },
     { name: 'React', level: 90, category: 'Frontend', icon: '⚛️' },
     { name: 'Express.js', level: 90, category: 'Backend', icon: '🚀' }
   ];
