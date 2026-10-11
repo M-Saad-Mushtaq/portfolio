@@ -63,6 +63,16 @@ const projectImagesBySlug = Object.fromEntries(
 const projectMetadata: Omit<Project, 'images'>[] = [
   {
     id: 1,
+    slug: 'supportdesk-ai',
+    name: 'SupportDesk AI',
+    description: 'A self-directed customer-support portfolio project with a customer demo chat and staff workspace. React and TypeScript connect to FastAPI, SQLite persistence, local document search, and a provider-neutral agent with offline mock and optional Gemini adapters. Business identities, orders, and shipping data are fictional.',
+    techStack: ['React', 'TypeScript', 'FastAPI'],
+    githubLink: 'https://github.com/M-Saad-Mushtaq/supportdesk-ai',
+    year: '2026',
+    type: 'Website',
+  },
+  {
+    id: 2,
     slug: 'huntigo-web',
     name: 'Huntigo Website',
     description: 'Innovative platform that combines AR and location-based treasure hunts to drive foot traffic to local businesses.',
@@ -72,7 +82,7 @@ const projectMetadata: Omit<Project, 'images'>[] = [
     type: 'Website',
   },
   {
-    id: 2,
+    id: 3,
     slug: 'portfolio-website',
     name: 'Portfolio Website',
     description: 'Modern portfolio website with glassmorphic design and smooth animations.',
@@ -82,7 +92,7 @@ const projectMetadata: Omit<Project, 'images'>[] = [
     type: 'Website',
   },
   {
-    id: 3,
+    id: 4,
     slug: 'pulseplay',
     name: 'PulsePlay',
     description: 'AI-based song streaming and recommendation mobile app.',
@@ -92,7 +102,7 @@ const projectMetadata: Omit<Project, 'images'>[] = [
     type: 'Mobile Application',
   },
   {
-    id: 4,
+    id: 5,
     slug: 'kinderpal',
     name: 'Kinderpal',
     description: 'Content Management app for Kids.',
@@ -102,7 +112,7 @@ const projectMetadata: Omit<Project, 'images'>[] = [
     type: 'Mobile Application',
   },
   {
-    id: 5,
+    id: 6,
     slug: 'ai-image-generator',
     name: 'AI Image Generator',
     description: 'AI image generator built with the MERN stack.',
@@ -112,7 +122,7 @@ const projectMetadata: Omit<Project, 'images'>[] = [
     type: 'Web Application',
   },
   {
-    id: 6,
+    id: 7,
     slug: 'ngo-blood-donation-dotnet',
     name: 'NGO Blood Donation System (.NET)',
     description: 'Blood donation management web app using SQL and .NET Core.',
@@ -122,7 +132,7 @@ const projectMetadata: Omit<Project, 'images'>[] = [
     type: 'Web Application',
   },
   {
-    id: 7,
+    id: 8,
     slug: 'ngo-blood-donation-mern',
     name: 'NGO Blood Donation System (MERN)',
     description: 'Blood donation management web app built with the MERN stack.',
@@ -132,7 +142,7 @@ const projectMetadata: Omit<Project, 'images'>[] = [
     type: 'Web Application',
   },
   {
-    id: 8,
+    id: 9,
     slug: 'movie-review-website',
     name: 'Movie Review Website',
     description: 'Movie review platform built on the MERN stack.',
@@ -142,7 +152,7 @@ const projectMetadata: Omit<Project, 'images'>[] = [
     type: 'Web Application',
   },
   {
-    id: 9,
+    id: 10,
     slug: 'tenzies',
     name: 'Tenzies',
     description: 'Dice game Tenzies implemented in React.',
@@ -152,7 +162,7 @@ const projectMetadata: Omit<Project, 'images'>[] = [
     type: 'Web Game',
   },
   {
-    id: 10,
+    id: 11,
     slug: 'chat-app',
     name: 'Chat App',
     description: 'Real-time chat application using MERN stack and Socket.io.',
@@ -162,7 +172,7 @@ const projectMetadata: Omit<Project, 'images'>[] = [
     type: 'Web Application',
   },
   {
-    id: 11,
+    id: 12,
     slug: 'solitaire',
     name: 'Solitaire',
     description: 'Classic solitaire card game implemented with C++ libraries.',
@@ -172,7 +182,7 @@ const projectMetadata: Omit<Project, 'images'>[] = [
     type: 'Game',
   },
   {
-    id: 12,
+    id: 13,
     slug: 'alphabet-catcher',
     name: 'Alphabet Catcher',
     description: 'Assembly-language game where players catch falling alphabets.',
@@ -182,7 +192,7 @@ const projectMetadata: Omit<Project, 'images'>[] = [
     type: 'Game',
   },
   {
-    id: 13,
+    id: 14,
     slug: 'teleword',
     name: 'Teleword',
     description: 'C++ console-based word-finding program for a 15x15 grid.',
